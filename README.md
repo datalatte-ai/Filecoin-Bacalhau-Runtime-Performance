@@ -21,13 +21,13 @@ In the experiment's first phase, we ran the docker for 235 or 34,359,738,368 ope
 
 
 <p align="center">
-    <img src="https://github.com/datalatte-ai/Knowledge-graph-storage-on-filecoin/blob/main/images/chart1.png" width="800px">
+    <img src="https://github.com/datalatte-ai/Filecoin-Bacalhau-Runtime-Performance/blob/main/images/chart1.png" width="800px">
 </p>
 
 As shown in Figure 1, you can see that although at the beginning of the tests, the gap in run time is somewhat big as the computations get bigger and bigger, this gap would not increase and remain linear. The linear slope between the two functions is very small, ensuring the gap would not widen significantly.
 
 <p align="center">
-    <img src="https://github.com/datalatte-ai/Knowledge-graph-storage-on-filecoin/blob/main/images/chart2.png" width="800px">
+    <img src="https://github.com/datalatte-ai/Filecoin-Bacalhau-Runtime-Performance/blob/main/images/chart2.png" width="800px">
 </p>
 
 Based on the results we reported in Figure 1, we designed a formula to estimate the expected computation time for both Docker and Bacalhau in 2100 or 1,267,650,600,228,229,401,496,703,205,376 operation units.
