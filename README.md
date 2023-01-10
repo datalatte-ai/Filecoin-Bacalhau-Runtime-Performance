@@ -1,11 +1,28 @@
-## A report on Filecoin Bacalhau runtime performance
-Summary:
+<p align="center">
+    <img src="https://www.datalatte.com/imgs/datalatte.svg">
+</p>
+<p align="center">
+    <a href="https://github.com/datalatte-ai/datalatte-ai/Filecoin-Bacalhau-Runtime-Performance/graphs/contributors" alt="Contributors">
+        <img src="https://img.shields.io/github/contributors/datalatte-ai/Filecoin-Bacalhau-Runtime-Performance" /></a>
+    <a href="https://github.com/datalatte-ai/datalatte-ai/Filecoin-Bacalhau-Runtime-Performance/pulse" alt="Activity">
+        <img src="https://img.shields.io/github/commit-activity/m/datalatte-ai/Filecoin-Bacalhau-Runtime-Performance" /></a>
+    <a href="https://discord.com/invite/saUmuZ3Rrw">
+        <img src="https://img.shields.io/discord/308323056592486420?logo=discord"
+            alt="chat on Discord"></a>
+    <a href="https://twitter.com/intent/follow?screen_name=DATALATTE_">
+        <img src="https://img.shields.io/twitter/follow/DATALATTE_?style=social&logo=twitter"
+            alt="follow on Twitter"></a>
+</p>
+
+
+# Performance Analysis of Filecoin Bacalhau Runtime
+### Summary
 
 Web 3.0's two major pillars are transparency and privacy. As a data monetization Dapp, we should construct our environment on these pillars, and decentralization makes it possible.
 The confidentiality of data and the security of computing to data are crucial in our field of work.
 
 
-Importance of compute to data: 
+### Importance of compute to data 
 We are a data monetization Dapp, as we have just mentioned, and our clients are capable of running their data models on the provided data. 
 We are a data monetization Dapp that collects and enriches raw data while preserving users' privacy and ownership.
 Given that compute to data is one of the high-demand subjects in the field of data consumption, we want to provide an easy and secure space for our users to monetize their data without data being leaked, and for our clients to use the data insights without their data being abused in the process.
@@ -13,7 +30,8 @@ Within the Web 3.0 environment, our users should be able to see precisely what i
 Bacalhau has established itself as one of the leading platforms in the computing to data industry, with many great features that can be very useful for various use cases; as a data monetization Dapp, we find these tools to be very useful and intriguing.
 One of the things we're excited about is Bacalhau computing speed, which we assessed in the following case study.
 
-Case study:
+
+### Case study
 We mainly conducted a case study highlighting latency's significance when using Filecoin Bacalhau vs. Docker. 
 We developed a docker image used in both scenarios to compare the execution times between running it through the Filecoin Bacalhau CLI and a docker execution. Given how the operating system affects the CPU's performance, we ran each test 100 times to eliminate any possible runtime inconsistency. 
 A processing unit is considered N/N (=1), which N is determined by the execution time to simulate more complex computations. The time complexity of our test algorithm is O(2N) and the space complexity is O(N). As the execution time is the experiment’s primary variable, we defined the algorithm in a way that we can ignore the effect of space complexity on the results, as it’s only linear compared to the exponential time complexity.
@@ -34,7 +52,7 @@ Based on the results we reported in Figure 1, we designed a formula to estimate 
 As you can see, the expected results are near identical in such high-complexity computation.
 
 
-Conclusion:
+### Conclusion
 One of the primary concerns with blockchain computing platforms is computation speed.  For that reason, it is usually challenging to consider a product that uses a blockchain-based computing system. 
 A Dapp should be decentralized in almost every way, but blockchain-based data computation has historically been challenging and slow compared to both centralized and distributed computation.
 That being said, as we have shown, it is no longer an issue. In this case study, we concluded that Bacalhau offers an excellent computation speed with a blockchain storage.
